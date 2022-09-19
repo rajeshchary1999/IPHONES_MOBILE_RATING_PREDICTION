@@ -1,0 +1,99 @@
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+  }
+  body {
+    background-image: url("phone.jpg");
+    background-size: 100%;
+  }
+  .tab {
+    margin: auto;
+    font-size: 15px;
+    width: 40%;
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+  }
+  .button {
+    background-color: #fff; /* Green */
+    border: none;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .tdB {
+    text-align: center !important;
+  }
+  .tdB input {
+    width: 18%;
+    margin-top: 40px;
+    background: #04aa6d;
+    color: #fff;
+    margin-right: 218px;
+  }
+  .tab select {
+    padding: 5px;
+    border-radius: 5px;
+    width: 59%;
+  }
+  .tab td:nth-child(odd) {
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+    padding-left: 30px;
+  }
+  .tab input {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .nav li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+  
+  .nav li:last-child {
+    border-right: none;
+  }
+  
+  .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04aa6d;
+  }
+  #resultP {
+    background-color: rgb(255, 235, 204);
+    background-image: none;
+  }
+  
+  #resultP td {
+    color: #000;
+    font-size: 25px;
+    padding-top: 150px;
+    padding-left: 140px;
+  }

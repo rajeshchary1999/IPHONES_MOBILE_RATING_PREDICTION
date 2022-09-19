@@ -1,0 +1,125 @@
+
+<html >
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/mobile.js"></script>
+    <link rel= "stylesheet" type= "text/css" href= "../static/Mobile.css">
+
+
+</head>
+
+<form action="/predict" method="POST">
+    <ul class="nav">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#Code">Code</a></li>
+        <li><a href="#CONTRIBUTORS">Contributors</a></li>
+        <li style="float:right"><a href="#about">About</a></li>
+    </ul>
+<br/><br/>
+     <marquee class="title">IPHONE Mobile Rating Prediction</marquee>
+     <br/><br/>
+     <table class="tab">
+        <tbody>
+            <tr>
+            <td>ProductName</td>
+            <td>
+                <select name="ProductName" id="ProductName">
+                    <option>Select one</option>
+                    <option value="4">APPLE iPhone 11 White</option>
+                    <option value="0"> APPLE iPhone 11 Black</option>
+                    <option value="1"> APPLE iPhone 11 Green</option>
+                    <option value="2"> APPLE iPhone 11 Purple</option>
+                    <option value="26"> APPLE iPhone 14 Pro Silver</option>
+                    <option value="3"> APPLE iPhone 11 Red</option>
+                    <option value="27"> APPLE iPhone 14 Pro Space Black</option>
+                    <option value="26">APPLE iPhone 14 Pro Silver</option>
+                    <option value="32"> APPLE iPhone SE White</option>
+                    <option value="23"> APPLE iPhone 14 Plus Purple</option>
+                    <option value="29"> APPLE iPhone 14 Starligh</option>
+                    <option value="19"> APPLE iPhone 13 Pink</option>
+                    <option value="12"> APPLE iPhone 13 Midnight</option>
+                    <option value="28"> APPLE iPhone 14 Purple</option>
+                    <option value="18"> APPLE iPhone 13 PRODUCT RED</option>
+                    <option value="11"> APPLE iPhone 13 Blue</option>
+                    <option value="22"> APPLE iPhone 14 Plus Blue</option>
+                    <option value="14"> APPLE iPhone 13 Mini Midnight</option>
+                    <option value="9"> APPLE iPhone 12 Purple</option>
+                    <option value="21"> APPLE iPhone 14 PRODUCT RED</option>
+                    <option value="20"> APPLE iPhone 13 Starlight</option>
+                    <option value="6"> APPLE iPhone 12 Black</option>
+                    <option value="7"> APPLE iPhone 12 Green</option>
+                    <option value="13"> APPLE iPhone 13 Mini Blue</option>
+                    <option value="33"> Apple iPhone 11 Green</option>
+                    <option value="30"> APPLE iPhone SE Black</option>
+                    <option value="5"> APPLE iPhone 11 Yellow</option>
+                    <option value="10"> APPLE iPhone 12 White</option>
+                    <option value="25"> APPLE iPhone 14 Pro Max Space Black</option>
+                    <option value="15"> APPLE iPhone 13 Mini PRODUCT RED</option>
+                    <option value="24"> APPLE iPhone 14 Pro Gold</option>
+                    <option value="17"> APPLE iPhone 13 Mini Starlight</option>
+                    <option value="8"> APPLE iPhone 12 Mini Blue</option>
+                    <option value="16"> APPLE iPhone 13 Mini Pink</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>
+                    <input type="number" name="Price" id="Price" placeholder="Enter Price of Mobile" min="1" max="99999">
+                </td>
+            </tr>
+            <tr>
+                <td>Rom</td><td><input type="number" name="ROM" id="Rom" placeholder="Enter GB of Rom" min="1" max="9999"></td>
+            </tr>
+            <tr>
+                <td>Camera</td>
+                <td>
+                    <select name="Camera" id="Camera">
+                        <option>Select one</option>
+                        <option value="1"> 2MP + 12MP 12MP </option>
+                        <option value="2"> 48MP + 12MP + 12MP + 12MP 12MP</option>
+                        <option value="0"> 12MP   7MP</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Processorr</td>
+                <td>
+                    <select name="Processorr" id="Processorr">
+                        <option>Select one</option>
+                        <option value="0"> A13 Bionic Chip Processor </option>
+                        <option value="5"> A16 Bionic Chip 6 Core Processor Processor</option>
+                        <option value="1"> A13 Bionic Chip with 3rd Gen Neural Engine Processor</option>
+                        <option value="3"> A15 Bionic Chip 6 Core Processor Processor</option>
+                        <option value="4"> A15 Bionic Chip Processor</option>
+                        <option value="2"> A14 Bionic Chip with Next Generation Neural En...</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Liquid_Retina_Hd</td>
+                <td>
+                    <select  name="Liquid_Retina_Hd" id="Liquid_Retina_Hd">
+                        <option>Select one </option>
+                        <option value="0">No</option>
+                        <option value="1">yes</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Super_Retina_XDR</td>
+                <td>
+                    <select name="Super_Retina_XDR" id="Super_Retina_XDR">
+                       <option>Select one</option>
+                       <option value="0">No</option>
+                       <option value="1">Yes</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tdB"><input class="button" type="Submit" id="chk" value="Predict"></td>
+            </tr>
+        </tbody>
+     </table>
+</form>
+
